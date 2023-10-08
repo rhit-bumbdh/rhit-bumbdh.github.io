@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" href="images/favicon.png" />
-  </head>
-  <body id="portfolio">
-    <header>
-      <h1>Dalton Bumb</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
-    </nav>
-    <!-- Your content goes here -->
-    <main>
-    <h1>Portfolio</h1>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="images/favicon.png" />
+</head>
+
+<body id="portfolio">
+  <header>
+    <h1>Dalton Bumb</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+  <!-- Your content goes here -->
+  <main>
+    <div id="container">
+      <div id="animation"><h1>Portfolio</h1></div>
+    </div>
     <ul id="portfolioItems">
       <li>
-        <h2><a href="#">Project Name</a></h2>
-        <img src="C:\Users\bumbdh\Pictures\fa_func_sim.png" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Vestibulum lorem sed risus ultricies tristique.</p>
+        <div class="projectCard">
+          <h2><a href="#">Genetic Algorithm Research Project</a></h2>
+          <img class="projectImg" src="C:\Users\bumbdh\Downloads\genetic.PNG" />
+          <body class="projectDescription">
+            <p>Implemented in Java. Allows the user to preview the evolution of a given population. The user can input various variables pertaining to the initial state of the population and how the population should evolve.</p>
+          </body>
+        </div>
+      </li>
+      <li>
+        <div class="projectCard">
+          <h2><a href="#">Tech Stack Showcase Site</a></h2>
+          <img class="projectImg" src="C:\Users\bumbdh\Downloads\teckStack.PNG" />
+          <body class="projectDescription">
+            <p>Website built with React, Typescript, Mongo DB and SQL. Displays the technology stack of popular
+              websites on the internet</p>
+          </body>
+        </div>
       </li>
     </ul>
-</main>
-<footer>
+  </main>
+  <footer>
     Email: dbumb21@gmail.com
-</footer>
-<script src="scripts/main.js"></script>
-  </body>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
